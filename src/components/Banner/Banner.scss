@@ -1,0 +1,62 @@
+.banner {
+  width: 30%;
+  height: 24rem;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 0.75rem 1.5rem 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  .bg {
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out, transform 0.5s linear;
+    // transition: ;
+  }
+
+  .content {
+    height: 9rem;
+    width: 21rem;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.342);
+    text-transform: uppercase;
+    line-height: 1.7;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+
+    p {
+      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &:hover {
+    .bg {
+      background-size: cover;
+      background-position: center top;
+      height: 100%;
+      width: 100%;
+      filter: blur(5px);
+      transform: scale(1.1);
+      transition: transform 1s linear;
+    }
+    .content {
+      background-color: rgba(255, 255, 255, 0.699);
+      transform: scale(1.03);
+    }
+  }
+}
+
+.bigger {
+  height: 35rem;
+}
