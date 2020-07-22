@@ -1,9 +1,9 @@
 import React from 'react';
 import BannerContainer from '../../components/BannerContainer/BannerContainer';
-import './homepage.scss';
+import './HomePage.scss';
 export default function Homepage() {
   return (
-    <div className="homepage">
+    <div className="home-page">
       <BannerContainer />
     </div>
   );

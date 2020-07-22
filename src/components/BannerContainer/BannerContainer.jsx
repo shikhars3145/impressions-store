@@ -7,7 +7,7 @@ export class BannerContainer extends Component {
     this.state = {
       categories: [
         {
-          title: 'Footwear',
+          title: 'footwear',
           id: 3,
           bgImage:
             process.env.PUBLIC_URL + './assets/images/homepage/footwear.jpg',
@@ -19,21 +19,22 @@ export class BannerContainer extends Component {
             process.env.PUBLIC_URL + './assets/images/homepage/accessories.jpg',
         },
         {
-          title: 'Bags/Trolleys',
+          title: 'bags/trolleys',
           id: 5,
           bgImage: process.env.PUBLIC_URL + './assets/images/homepage/bag.jpg',
         },
         {
-          title: 'Men',
+          title: 'mens',
           id: 1,
           bgImage: process.env.PUBLIC_URL + './assets/images/homepage/men.jpg',
           bigger: true,
         },
         {
-          title: 'Women',
+          title: 'womens',
           id: 2,
           bgImage:
             process.env.PUBLIC_URL + './assets/images/homepage/women.jpg',
+          bgPos: 'top right',
           bigger: true,
         },
       ],
@@ -42,8 +43,14 @@ export class BannerContainer extends Component {
   render() {
     return (
       <div className="bannerContainer">
-        {this.state.categories.map(({ title, id, bgImage, bigger }) => (
-          <Banner title={title} key={id} imageUrl={bgImage} big={bigger} />
+        {this.state.categories.map(({ title, id, bgImage, bgPos, bigger }) => (
+          <Banner
+            title={title}
+            key={id}
+            imageUrl={bgImage}
+            big={bigger}
+            bgPos={bgPos}
+          />
         ))}
       </div>
     );

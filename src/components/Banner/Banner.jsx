@@ -1,12 +1,19 @@
 import React from 'react';
 import './Banner.scss';
-export default function Banner({ title, imageUrl, big }) {
+
+import { withRouter } from 'react-router-dom';
+
+function Banner({ title, imageUrl, bgPos, big, history, match }) {
   return (
-    <div className={`banner ${big ? 'bigger' : ''}`}>
+    <div
+      className={`banner ${big ? 'bigger' : ''}`}
+      onClick={() => history.push(`${match.url}${title}`)}
+    >
       <div
         className="bg"
         style={{
           backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(${imageUrl})`,
+          backgroundPosition: `${bgPos}`,
         }}
       ></div>
       <div className="content">
@@ -16,3 +23,5 @@ export default function Banner({ title, imageUrl, big }) {
     </div>
   );
 }
+
+export default withRouter(Banner);

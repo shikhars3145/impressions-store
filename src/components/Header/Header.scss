@@ -1,0 +1,51 @@
+.header {
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  background-color: #121212;
+
+  .logo {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #eac989;
+    .company-name {
+      color: #dfdfdf;
+      font-family: 'Cormorant SC';
+      font-weight: 500;
+    }
+  }
+  .nav {
+    width: 50%;
+    display: inline-flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Cormorant SC';
+    font-size: 2rem;
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+      height: 100%;
+
+      li {
+        list-style: none;
+        color: #fff;
+        vertical-align: middle;
+        transition: all 0.3s linear;
+      }
+
+      &:hover > li {
+        transform: scale(1.2);
+        color: #eac989;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
