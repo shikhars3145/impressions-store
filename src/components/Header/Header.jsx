@@ -12,10 +12,10 @@ export default function Header() {
         <Link className="nav-link" to="/shop">
           <li>SHOP</li>
         </Link>
-        <Link className="nav-link" to="/shop">
+        <Link className="nav-link" to="/authpage">
           <li>SIGN-IN</li>
         </Link>
-        <Link className="nav-link" to="/shop">
+        <Link className="nav-link" to="/authpage">
           <li>REGISTER</li>
         </Link>
       </ul>

@@ -1,0 +1,20 @@
+.button-primary {
+  display: block;
+  min-width: 16.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  margin: 0 auto;
+  padding: 0 3.5rem;
+  font-size: 1.5rem;
+  border: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  background-color: black;
+  outline: none;
+
+  &:hover {
+    color: black;
+    background-color: #fce6a9;
+    background-color: #eac989;
+    cursor: pointer;
+  }
+}

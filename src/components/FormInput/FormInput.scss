@@ -1,0 +1,46 @@
+.form-input {
+  position: relative;
+  margin-bottom: 3.5rem;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0.5rem;
+    background: transparent;
+    font-family: inherit;
+    color: #fff;
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      top: -2rem;
+      left: -0.5rem;
+      //   color: #000000;
+      color: #ffb114;
+      color: #fce6a9;
+      color: #eac989;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    &:invalid:not(:focus):not(:placeholder-shown) {
+      border-bottom: 1px solid #ff6666;
+    }
+    &:valid:not(:focus) {
+      border-bottom: 1px solid #fce6a9;
+    }
+  }
+
+  label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-family: inherit;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    color: rgb(128, 128, 128);
+  }
+}
