@@ -13,22 +13,25 @@
     font-family: inherit;
     color: #fff;
 
+    &:-webkit-autofill + label,
     &:focus + label,
     &:not(:placeholder-shown) + label {
       top: -2rem;
       left: -0.5rem;
-      //   color: #000000;
-      color: #ffb114;
-      color: #fce6a9;
       color: #eac989;
       font-size: 1.4rem;
       font-weight: 400;
     }
-    &:invalid:not(:focus):not(:placeholder-shown) {
+    &:invalid:not(:focus):not(:placeholder-shown):not(:-webkit-autofill) {
       border-bottom: 1px solid #ff6666;
     }
     &:valid:not(:focus) {
       border-bottom: 1px solid #fce6a9;
+    }
+    &:-webkit-autofill {
+      -webkit-text-fill-color: rgb(255, 255, 255);
+      -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset;
+      border-bottom: 1px solid #ffffff;
     }
   }
 

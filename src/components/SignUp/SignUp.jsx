@@ -95,7 +95,7 @@ export class SignUp extends Component {
               justifyContent: 'space-between',
             }}
           >
-            <ButtonPrimary type="submit">SIGN IN</ButtonPrimary>
+            <ButtonPrimary type="submit">SIGN UP</ButtonPrimary>
           </div>
         </form>
       </div>
