@@ -6,7 +6,7 @@ import ShopPage from './pages/ShopPage/ShopPage';
 import AuthPage from './pages/AuthPage/AuthPage';
 import { Route } from 'react-router-dom';
 
-import { auth } from './firebase/FirebaseUtils';
+import { auth, createUserProfileDocument } from './firebase/FirebaseUtils';
 
 export class App extends Component {
   constructor() {
@@ -20,8 +20,27 @@ export class App extends Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
-      this.setState({ currentUser: user });
+    // updating unsubscribeFromAuth from null to function object
+    // onAuthStateChange calls inside function everytime user signs in or out
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      // if user signed in
+      // 1. create a userprofileDocument if not already made
+      // 2. store that document in app state
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+
+        //runs once at start then everytime document is updated
+        userRef.onSnapshot((snapshot) => {
+          this.setState({
+            currentUser: {
+              id: snapshot.id, //because data doesnt have id on it
+              ...snapshot.data(),
+            },
+          });
+        });
+      } else {
+        this.setState({ currentUser: null });
+      }
     });
   }
 
