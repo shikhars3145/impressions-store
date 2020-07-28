@@ -1,0 +1,25 @@
+.cart-icon {
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .cart-logo {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -5px;
+  }
+
+  .item-count {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 15px;
+    font-family: 'Lato';
+  }
+}
