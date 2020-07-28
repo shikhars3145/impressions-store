@@ -7,6 +7,8 @@ import AuthPage from './pages/AuthPage/AuthPage';
 import { Route } from 'react-router-dom';
 
 import { auth, createUserProfileDocument } from './firebase/FirebaseUtils';
+import { connect } from 'react-redux';
+import { setCurrentUser } from './redux/user/userActions';
 
 export class App extends Component {
   constructor() {
@@ -31,15 +33,13 @@ export class App extends Component {
 
         //runs once at start then everytime document is updated
         userRef.onSnapshot((snapshot) => {
-          this.setState({
-            currentUser: {
-              id: snapshot.id, //because data doesnt have id on it
-              ...snapshot.data(),
-            },
+          this.props.setCurrentUser({
+            id: snapshot.id, //because data doesnt have id on it
+            ...snapshot.data(),
           });
         });
       } else {
-        this.setState({ currentUser: null });
+        this.props.setCurrentUser(userAuth);
       }
     });
   }
@@ -51,7 +51,7 @@ export class App extends Component {
   render() {
     return (
       <Fragment>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/mens" component={MensPage} />
         <Route exact path="/shop" component={ShopPage} />
@@ -61,4 +61,8 @@ export class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+});
+
+export default connect(null, mapDispatchToProps)(App);
