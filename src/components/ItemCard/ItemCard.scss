@@ -1,8 +1,9 @@
 .item-card {
+  position: relative;
   width: 22%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 35rem;
   align-items: center;
 
   &_image {
@@ -10,7 +11,7 @@
     height: 90%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
   }
 
   &_footer {
@@ -18,16 +19,32 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 1.8rem;
 
     .name {
       width: 70%;
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
     }
 
     .price {
       text-align: right;
       width: 30%;
     }
+  }
+
+  &:hover {
+    .button-primary {
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .button-primary {
+    position: absolute;
+    display: none;
+    top: 25.5rem;
+    min-width: 80%;
+    padding: 0;
+
   }
 }

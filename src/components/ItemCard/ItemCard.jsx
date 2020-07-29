@@ -1,7 +1,12 @@
 import React from 'react';
 import './ItemCard.scss';
 
-export default function ItemCard({ name, imageUrl, price }) {
+import ButtonPrimary from '../ButtonPrimary/ButtonPrimary'
+import { connect } from 'react-redux';
+import { addItemToCart } from '../../redux/cart/cartActions';
+
+function ItemCard({addItemToCart,item}) {
+  const { name, imageUrl, price } = item;
   return (
     <div className="item-card">
       <div
@@ -9,11 +14,19 @@ export default function ItemCard({ name, imageUrl, price }) {
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
-      ></div>
+      >
+      </div>
       <div className="item-card_footer">
         <div className="name">{name}</div>
         <div className="price">Rs.{price}</div>
       </div>
+      <ButtonPrimary onClick={() => addItemToCart(item)} white>ADD TO CART</ButtonPrimary>
     </div>
   );
 }
+
+const mapDispatchToProps = (dispatch) => ({
+  addItemToCart: (item) => dispatch(addItemToCart(item))
+})
+
+export default connect(null,mapDispatchToProps)(ItemCard)

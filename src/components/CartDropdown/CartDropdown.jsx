@@ -10,6 +10,7 @@ export default function CartDropdown() {
       <ButtonPrimary
         style={{
           padding: '0',
+          borderColor: '#000'
         }}
       >
         GO TO CHECKOUT
