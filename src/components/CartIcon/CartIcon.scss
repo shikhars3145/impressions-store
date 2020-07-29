@@ -1,7 +1,7 @@
 .cart-icon {
   color: #fff;
-  width: 45px;
-  height: 45px;
+  width: 4.5rem;
+  height: 4.5rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -9,17 +9,17 @@
   cursor: pointer;
 
   .cart-logo {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     position: relative;
-    top: -5px;
+    top: -0.5rem;
   }
 
   .item-count {
     position: absolute;
     font-size: 1rem;
     font-weight: bold;
-    bottom: 15px;
+    bottom: 1.5rem;
     font-family: 'Lato';
   }
 }
