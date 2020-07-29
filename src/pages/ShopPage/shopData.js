@@ -96,7 +96,7 @@ const SHOP_DATA = [
     routeName: 'womens',
     items: [
       {
-        id: 1,
+        id: 34,
         name: 'Gold Sheath Dress',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -104,7 +104,7 @@ const SHOP_DATA = [
         price: 1370,
       },
       {
-        id: 2,
+        id: 35,
         name: 'Dotted A-Line Dress',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -112,7 +112,7 @@ const SHOP_DATA = [
         price: 2692,
       },
       {
-        id: 3,
+        id: 36,
         name: 'Women Blue Jeans',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -120,7 +120,7 @@ const SHOP_DATA = [
         price: 1349,
       },
       {
-        id: 4,
+        id: 37,
         name: 'Maroon Lace Top',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -128,7 +128,7 @@ const SHOP_DATA = [
         price: 524,
       },
       {
-        id: 5,
+        id: 38,
         name: 'Women Grey Jeans',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -136,7 +136,7 @@ const SHOP_DATA = [
         price: 854,
       },
       {
-        id: 6,
+        id: 39,
         name: 'White Printed Tunic',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -144,7 +144,7 @@ const SHOP_DATA = [
         price: 599,
       },
       {
-        id: 7,
+        id: 40,
         name: 'Accordion Pleats Dress',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -159,7 +159,7 @@ const SHOP_DATA = [
     routeName: 'footwear',
     items: [
       {
-        id: 1,
+        id: 65,
         name: 'Men Grey Sneakers',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -167,7 +167,7 @@ const SHOP_DATA = [
         price: 2999,
       },
       {
-        id: 2,
+        id: 66,
         name: 'Men Black Trainers',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -175,7 +175,7 @@ const SHOP_DATA = [
         price: 1500,
       },
       {
-        id: 3,
+        id: 67,
         name: 'Women Grey Ballerinas',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -183,7 +183,7 @@ const SHOP_DATA = [
         price: 957,
       },
       {
-        id: 4,
+        id: 68,
         name: 'Women White Sandals',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -198,7 +198,7 @@ const SHOP_DATA = [
     routeName: 'accessories',
     items: [
       {
-        id: 1,
+        id: 91,
         name: 'Mens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -206,7 +206,7 @@ const SHOP_DATA = [
         price: 5997,
       },
       {
-        id: 2,
+        id: 92,
         name: 'Mens Aviator Glasses',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -214,7 +214,7 @@ const SHOP_DATA = [
         price: 1499,
       },
       {
-        id: 3,
+        id: 93,
         name: 'Womens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -222,7 +222,7 @@ const SHOP_DATA = [
         price: 6597,
       },
       {
-        id: 4,
+        id: 94,
         name: 'Womens Wallet',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -230,7 +230,7 @@ const SHOP_DATA = [
         price: 1427,
       },
       {
-        id: 5,
+        id: 95,
         name: 'Men Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -238,7 +238,7 @@ const SHOP_DATA = [
         price: 5695,
       },
       {
-        id: 6,
+        id: 96,
         name: 'Womens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -246,7 +246,7 @@ const SHOP_DATA = [
         price: 5397,
       },
       {
-        id: 7,
+        id: 97,
         name: 'Mens Wallet',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -254,7 +254,7 @@ const SHOP_DATA = [
         price: 1249,
       },
       {
-        id: 8,
+        id: 98,
         name: 'Men Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -262,7 +262,7 @@ const SHOP_DATA = [
         price: 7995,
       },
       {
-        id: 9,
+        id: 99,
         name: 'Mens Leather Belt',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -277,7 +277,7 @@ const SHOP_DATA = [
     routeName: 'bags',
     items: [
       {
-        id: 1,
+        id: 121,
         name: 'Grey Cabin Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -285,7 +285,7 @@ const SHOP_DATA = [
         price: 4199,
       },
       {
-        id: 2,
+        id: 122,
         name: 'White Large Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -293,7 +293,7 @@ const SHOP_DATA = [
         price: 7042,
       },
       {
-        id: 3,
+        id: 123,
         name: 'Black Large Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
@@ -301,7 +301,7 @@ const SHOP_DATA = [
         price: 6600,
       },
       {
-        id: 4,
+        id: 124,
         name: 'Black Handheld Bag',
         imageUrl:
           process.env.PUBLIC_URL +
