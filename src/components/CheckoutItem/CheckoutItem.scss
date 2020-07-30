@@ -1,0 +1,44 @@
+.checkout-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  font-size: 2rem;
+  padding: 1rem 0;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+
+  & > div {
+    width: 22%;
+    &:last-child {
+      width: 12%;
+    }
+  }
+
+  .image {
+    width: 22%;
+    height: 180px;
+    img {
+      max-width: 13.5rem;
+      object-fit: cover;
+      height: 180px;
+    }
+  }
+
+  .name,
+  .quantity,
+  .price {
+    width: 22%;
+  }
+
+  .quantity {
+    padding-left: 2rem;
+  }
+
+  .remove-btn {
+    text-align: right;
+    font-size: 3rem;
+    cursor: pointer;
+    padding-right: 1.5rem;
+  }
+}

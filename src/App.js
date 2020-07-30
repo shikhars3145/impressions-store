@@ -4,13 +4,14 @@ import Header from './components/Header/Header';
 import MensPage from './pages/MensPage/MensPage';
 import ShopPage from './pages/ShopPage/ShopPage';
 import AuthPage from './pages/AuthPage/AuthPage';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import { auth, createUserProfileDocument } from './firebase/FirebaseUtils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/userActions';
 import { selectCurrentUser } from './redux/user/userSelectors';
 import { createStructuredSelector } from 'reselect';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 
 export class App extends Component {
   constructor() {
@@ -54,16 +55,19 @@ export class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/mens" component={MensPage} />
-        <Route exact path="/shop" component={ShopPage} />
-        <Route
-          exact
-          path="/authpage"
-          render={() =>
-            this.props.currentUser ? <Redirect to="/" /> : <AuthPage />
-          }
-        />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/mens" component={MensPage} />
+          <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
+          <Route
+            exact
+            path="/authpage"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/" /> : <AuthPage />
+            }
+          />
+        </Switch>
       </Fragment>
     );
   }
