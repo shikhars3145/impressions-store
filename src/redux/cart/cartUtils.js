@@ -7,3 +7,9 @@ export const addItemToCartUtil = (cartItems, newItem) => {
     );
   } else return [...cartItems, { ...newItem, quantity: 1 }];
 };
+
+export const decreaseItemQuantityFromCartUtil = (cartItems, targetItem) => {
+  return cartItems.map((item) =>
+    item.id === targetItem.id ? { ...item, quantity: item.quantity - 1 } : item
+  );
+};

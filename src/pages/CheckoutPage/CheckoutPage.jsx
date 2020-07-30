@@ -20,9 +20,11 @@ function CheckoutPage({ cartItems, total }) {
           <div className="header-column-title">Price</div>
           <div className="header-column-title">Remove</div>
         </div>
-        {cartItems.map((item) => (
-          <CheckoutItem key={item.id} item={item} />
-        ))}
+        <div className="cart-items-container">
+          {cartItems.map((item) => (
+            <CheckoutItem key={item.id} item={item} />
+          ))}
+        </div>
         <div className="total">TOTAL: Rs. {total}</div>
       </div>
     </div>

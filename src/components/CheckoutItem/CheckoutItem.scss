@@ -32,7 +32,10 @@
   }
 
   .quantity {
-    padding-left: 2rem;
+    padding-left: 1rem;
+    & > span {
+      cursor: pointer;
+    }
   }
 
   .remove-btn {
