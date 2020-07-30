@@ -9,6 +9,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { auth, createUserProfileDocument } from './firebase/FirebaseUtils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/userActions';
+import { selectCurrentUser } from './redux/user/userSelectors';
 
 export class App extends Component {
   constructor() {
@@ -68,7 +69,7 @@ export class App extends Component {
 }
 
 const mapStateToProp = (state) => ({
-  currentUser: state.user.currentUser,
+  currentUser: selectCurrentUser(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
