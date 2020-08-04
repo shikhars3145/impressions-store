@@ -8,15 +8,14 @@ const SHOP_DATA = [
         id: 1,
         name: 'Green Slim Fit Shirt',
         imageUrl:
-          process.env.PUBLIC_URL +
-          './assets/images/clothing/men/greenShirt.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/greenShirt.jpg',
         price: 1679,
       },
       {
         id: 2,
         name: 'Grey Jeans',
         imageUrl:
-          process.env.PUBLIC_URL + './assets/images/clothing/men/greyJeans.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/greyJeans.jpg',
         price: 1754,
       },
       {
@@ -24,14 +23,14 @@ const SHOP_DATA = [
         name: 'White Linen Blazer',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/men/whiteBlazer.jpg',
+          '/assets/images/clothing/men/whiteBlazer.jpg',
         price: 1979,
       },
       {
         id: 4,
         name: 'Striped Polo T-shirt',
         imageUrl:
-          process.env.PUBLIC_URL + './assets/images/clothing/men/polo.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/polo.jpg',
         price: 1099,
       },
       {
@@ -39,7 +38,7 @@ const SHOP_DATA = [
         name: 'Off-White Chinos',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/men/offWhiteChino.jpg',
+          '/assets/images/clothing/men/offWhiteChino.jpg',
         price: 2199,
       },
       {
@@ -47,37 +46,35 @@ const SHOP_DATA = [
         name: 'Blue Checked Shirt',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/men/blueChecked.jpg',
+          '/assets/images/clothing/men/blueChecked.jpg',
         price: 1119,
       },
       {
         id: 7,
         name: 'Blue Party Suit',
         imageUrl:
-          process.env.PUBLIC_URL + './assets/images/clothing/men/partySuit.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/partySuit.jpg',
         price: 8249,
       },
       {
         id: 8,
         name: 'Red Checked Shirt',
         imageUrl:
-          process.env.PUBLIC_URL +
-          './assets/images/clothing/men/redChecked.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/redChecked.jpg',
         price: 714,
       },
       {
         id: 9,
         name: 'Blue Tuxedo Suit',
         imageUrl:
-          process.env.PUBLIC_URL +
-          './assets/images/clothing/men/blueTuxedo.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/blueTuxedo.jpg',
         price: 4999,
       },
       {
         id: 10,
         name: 'Blue Jeans',
         imageUrl:
-          process.env.PUBLIC_URL + './assets/images/clothing/men/blueJeans.jpg',
+          process.env.PUBLIC_URL + '/assets/images/clothing/men/blueJeans.jpg',
         price: 1819,
       },
       {
@@ -85,7 +82,7 @@ const SHOP_DATA = [
         name: 'Khaki Chinos',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/men/khakhiChino.jpg',
+          '/assets/images/clothing/men/khakhiChino.jpg',
         price: 1679,
       },
     ],
@@ -100,7 +97,7 @@ const SHOP_DATA = [
         name: 'Gold Sheath Dress',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-dress-gold.jpg',
+          '/assets/images/clothing/women/women-dress-gold.jpg',
         price: 1370,
       },
       {
@@ -108,7 +105,7 @@ const SHOP_DATA = [
         name: 'Dotted A-Line Dress',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-dress-dots.jpg',
+          '/assets/images/clothing/women/women-dress-dots.jpg',
         price: 2692,
       },
       {
@@ -116,7 +113,7 @@ const SHOP_DATA = [
         name: 'Women Blue Jeans',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-jeans-blue.jpg',
+          '/assets/images/clothing/women/women-jeans-blue.jpg',
         price: 1349,
       },
       {
@@ -124,7 +121,7 @@ const SHOP_DATA = [
         name: 'Maroon Lace Top',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-top-maroon.jpg',
+          '/assets/images/clothing/women/women-top-maroon.jpg',
         price: 524,
       },
       {
@@ -132,7 +129,7 @@ const SHOP_DATA = [
         name: 'Women Grey Jeans',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-jeans-black.jpg',
+          '/assets/images/clothing/women/women-jeans-black.jpg',
         price: 854,
       },
       {
@@ -140,7 +137,7 @@ const SHOP_DATA = [
         name: 'White Printed Tunic',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-top-white.jpg',
+          '/assets/images/clothing/women/women-top-white.jpg',
         price: 599,
       },
       {
@@ -148,7 +145,7 @@ const SHOP_DATA = [
         name: 'Accordion Pleats Dress',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/women/women-dress-black.jpg',
+          '/assets/images/clothing/women/women-dress-black.jpg',
         price: 799,
       },
     ],
@@ -163,7 +160,7 @@ const SHOP_DATA = [
         name: 'Men Grey Sneakers',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/footwear/men-grey-sneakers.jpg',
+          '/assets/images/clothing/footwear/men-grey-sneakers.jpg',
         price: 2999,
       },
       {
@@ -171,7 +168,7 @@ const SHOP_DATA = [
         name: 'Men Black Trainers',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/footwear/men-black-trainer.jpg',
+          '/assets/images/clothing/footwear/men-black-trainer.jpg',
         price: 1500,
       },
       {
@@ -179,7 +176,7 @@ const SHOP_DATA = [
         name: 'Women Grey Ballerinas',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/footwear/women-grey-ballerinas.jpg',
+          '/assets/images/clothing/footwear/women-grey-ballerinas.jpg',
         price: 957,
       },
       {
@@ -187,7 +184,7 @@ const SHOP_DATA = [
         name: 'Women White Sandals',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/footwear/women-white-sandals.jpg',
+          '/assets/images/clothing/footwear/women-white-sandals.jpg',
         price: 160,
       },
     ],
@@ -202,7 +199,7 @@ const SHOP_DATA = [
         name: 'Mens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/fossil-watch.jpg',
+          '/assets/images/clothing/accessories/fossil-watch.jpg',
         price: 5997,
       },
       {
@@ -210,7 +207,7 @@ const SHOP_DATA = [
         name: 'Mens Aviator Glasses',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/men-aviator.jpg',
+          '/assets/images/clothing/accessories/men-aviator.jpg',
         price: 1499,
       },
       {
@@ -218,7 +215,7 @@ const SHOP_DATA = [
         name: 'Womens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/fossil-girl.jpg',
+          '/assets/images/clothing/accessories/fossil-girl.jpg',
         price: 6597,
       },
       {
@@ -226,7 +223,7 @@ const SHOP_DATA = [
         name: 'Womens Wallet',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/women-wallet.jpg',
+          '/assets/images/clothing/accessories/women-wallet.jpg',
         price: 1427,
       },
       {
@@ -234,7 +231,7 @@ const SHOP_DATA = [
         name: 'Men Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/titan-watch-black.jpg',
+          '/assets/images/clothing/accessories/titan-watch-black.jpg',
         price: 5695,
       },
       {
@@ -242,7 +239,7 @@ const SHOP_DATA = [
         name: 'Womens Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/fossil-girl-silver.jpg',
+          '/assets/images/clothing/accessories/fossil-girl-silver.jpg',
         price: 5397,
       },
       {
@@ -250,7 +247,7 @@ const SHOP_DATA = [
         name: 'Mens Wallet',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/puma-wallet.jpg',
+          '/assets/images/clothing/accessories/puma-wallet.jpg',
         price: 1249,
       },
       {
@@ -258,7 +255,7 @@ const SHOP_DATA = [
         name: 'Men Analogue Watch',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/fossil-silver.jpg',
+          '/assets/images/clothing/accessories/fossil-silver.jpg',
         price: 7995,
       },
       {
@@ -266,7 +263,7 @@ const SHOP_DATA = [
         name: 'Mens Leather Belt',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/accessories/men-black-leather-belt.jpg',
+          '/assets/images/clothing/accessories/men-black-leather-belt.jpg',
         price: 849,
       },
     ],
@@ -281,7 +278,7 @@ const SHOP_DATA = [
         name: 'Grey Cabin Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/bags/grey-small-trolley.jpg',
+          '/assets/images/clothing/bags/grey-small-trolley.jpg',
         price: 4199,
       },
       {
@@ -289,7 +286,7 @@ const SHOP_DATA = [
         name: 'White Large Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/bags/white-trolley.jpg',
+          '/assets/images/clothing/bags/white-trolley.jpg',
         price: 7042,
       },
       {
@@ -297,7 +294,7 @@ const SHOP_DATA = [
         name: 'Black Large Trolley Suitcase',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/bags/black-trolley.jpg',
+          '/assets/images/clothing/bags/black-trolley.jpg',
         price: 6600,
       },
       {
@@ -305,7 +302,7 @@ const SHOP_DATA = [
         name: 'Black Handheld Bag',
         imageUrl:
           process.env.PUBLIC_URL +
-          './assets/images/clothing/bags/handheld-puma.jpg',
+          '/assets/images/clothing/bags/handheld-puma.jpg',
         price: 1649,
       },
     ],

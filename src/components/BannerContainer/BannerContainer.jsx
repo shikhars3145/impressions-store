@@ -9,13 +9,14 @@ import { selectBannerContainerCategories } from '../../redux/bannerContainer/ban
 function BannerContainer({ categories }) {
   return (
     <div className="bannerContainer">
-      {categories.map(({ title, id, bgImage, bgPos, bigger }) => (
+      {categories.map(({ title, id, bgImage, bgPos, bigger, route }) => (
         <Banner
           title={title}
           key={id}
           imageUrl={bgImage}
           big={bigger}
           bgPos={bgPos}
+          route={route}
         />
       ))}
     </div>

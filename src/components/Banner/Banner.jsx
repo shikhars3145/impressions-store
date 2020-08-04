@@ -3,11 +3,11 @@ import './Banner.scss';
 
 import { withRouter } from 'react-router-dom';
 
-function Banner({ title, imageUrl, bgPos, big, history, match }) {
+function Banner({ title, imageUrl, bgPos, big, history, match, route }) {
   return (
     <div
       className={`banner ${big ? 'bigger' : ''}`}
-      onClick={() => history.push(`${match.url}${title}`)}
+      onClick={() => history.push(`${match.url}shop/${route}`)}
     >
       <div
         className="bg"
