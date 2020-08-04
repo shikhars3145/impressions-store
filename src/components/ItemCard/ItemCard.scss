@@ -3,7 +3,7 @@
   width: 22%;
   display: flex;
   flex-direction: column;
-  height: 35rem;
+  height: 55rem;
   align-items: center;
 
   &_image {
@@ -11,7 +11,7 @@
     height: 90%;
     background-size: cover;
     background-position: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &_footer {
@@ -45,6 +45,5 @@
     top: 25.5rem;
     min-width: 80%;
     padding: 0;
-
   }
 }
