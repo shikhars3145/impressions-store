@@ -9,6 +9,7 @@
 html {
   font-size: 10px;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
 }
 
 a {

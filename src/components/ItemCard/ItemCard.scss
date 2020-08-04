@@ -5,30 +5,36 @@
   flex-direction: column;
   height: 55rem;
   align-items: center;
+  border: 1px solid #000;
+  min-width: 23rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 
   &_image {
     width: 100%;
-    height: 90%;
+    height: 95%;
     background-size: cover;
     background-position: center;
+    border-bottom: 1px solid #000;
     margin-bottom: 0.5rem;
   }
 
   &_footer {
     width: 100%;
-    height: 5%;
+    // height: 5%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.8rem;
 
     .name {
-      width: 70%;
-      margin-bottom: 1.5rem;
+      max-width: 60%;
     }
 
     .price {
       text-align: right;
-      width: 30%;
+      max-width: 40%;
+      margin-left: auto;
     }
   }
 
@@ -42,8 +48,17 @@
   .button-primary {
     position: absolute;
     display: none;
-    top: 25.5rem;
+    bottom: 7rem;
     min-width: 80%;
     padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-card {
+    height: 35rem;
+    min-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
