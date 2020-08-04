@@ -9,7 +9,7 @@ const middlewares = [logger];
 //store is passed as a parameter to Provider in index.js
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
-//persistor is passed to
+//persistor is passed to persistgate in index.js
 export const persistor = persistStore(store);
 
 export default store;

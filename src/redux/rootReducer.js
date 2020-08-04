@@ -16,4 +16,5 @@ const rootReducer = combineReducers({
   cart: cartReducer,
 });
 
+// persistReducer is passed as rootReducer in store.js
 export default persistReducer(persistConfig, rootReducer);
