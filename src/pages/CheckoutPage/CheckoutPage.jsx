@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 
 import './CheckoutPage.scss';
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
+import StripeButton from '../../components/StripeButton/StripeButton';
 
 function CheckoutPage({ cartItems, total }) {
   return (
@@ -26,6 +27,10 @@ function CheckoutPage({ cartItems, total }) {
           ))}
         </div>
         <div className="total">TOTAL: Rs. {total}</div>
+        <div className="warning">
+          *Use test credit card no 4242 4242 4242 4242 EXP: 01/25 CVV: 789
+        </div>
+        <StripeButton price={total} />
       </div>
     </div>
   );
