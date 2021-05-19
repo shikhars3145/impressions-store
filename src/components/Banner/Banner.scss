@@ -9,6 +9,7 @@
   margin: 0 0.75rem 1.5rem 0.75rem;
   overflow: hidden;
   cursor: pointer;
+  
 
   .bg {
     background-size: cover;
@@ -55,6 +56,12 @@
       background-color: rgba(255, 255, 255, 0.699);
       transform: scale(1.03);
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    width:100%
   }
 }
 
